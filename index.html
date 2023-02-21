@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <div class="header h-flex">
+        <div class="title">
+            <h1>Dojonary</h1>
+        </div>
+        <div class="search-area">
+            <input type="text" name="search" id="search-field" placeholder="Search">
+        </div>
+        <div class="login">
+            <button type="button" id="session" onclick="sessionToggle()">Login</button>
+        </div>
+    </div>
+    <div class="main-content h-flex">
+        <div class="word-containers v-flex">
+            <div class="box h-flex v-center">
+                <div class="word-details v-flex">
+                    <div class="centered">  
+                        <p class="word">ninja</p>
+                        <p class="word-type">noun</p>
+                        <p class="plural">Plural: <span class="italic">ninjas</span></p>
+                    </div> 
+                    <div>
+                        <button type="button" name="Ninja" class="like" onclick="definitionLiked(this)">13 likes</button>
+                    </div>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>  
+            </div>
+            <div class="box h-flex v-center">
+                <div class="word-details v-flex">
+                    <div>  
+                        <p class="word">ninja</p>
+                        <p class="word-type">noun</p>
+                        <p class="plural">Plural: <span class="italic">ninjas</span></p>
+                    </div> 
+                    <div>
+                        <button type="button" name="Ninja" class="like" onclick="definitionLiked()">37 likes</button>
+                    </div>
+                </div>
+                <div class="definition">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div> 
+            </div>
+        </div>
+        <div class="side-panel">
+            <div class="box v-flex">
+                <div>
+                    <p class="message">Dojonary is defined by <span class="bold">YOU</span></p>
+                </div>
+                <div>
+                    <button type="submit" id="add-definition" onclick="buttonHider(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

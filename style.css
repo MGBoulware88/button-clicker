@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+    margin: 0 60px;
+}
+/* It seemed everything had the same padding, so applying it here for all child divs 
+.main-content > div {
+    padding: 20px;
+}
+
+*** this actually caused the gap between main content left and right to be twice as wide as intended ***
+** applying it to the .main-content class worked as intended **
+*/
+
+/* Reused styles */
+.h-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.v-flex {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+.box {
+    border: 2px solid black;
+    padding: 10px;
+}
+.v-center {
+    align-items: center;
+}
+button {
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+
+/* Header */
+
+/* Header div */
+.header {
+    padding: 20px;
+    background-color: rgb(204, 204, 204);
+    gap: 40px;
+}
+/* Inside the Header */
+.title {
+    flex: 1.5;
+}
+.search-area {
+    flex: 4;
+}
+#search-field {
+    width: 85%;
+    border: 2px solid black;
+}
+.login {
+    flex: 0.5;
+}
+
+/* Button styling */
+
+/* All button styling */
+button {
+    padding: 4px 16px;
+    box-shadow: 2px 3px black;
+}
+
+/* Individual button styling */
+button#session {
+    background-color: rgb(43, 120, 228);
+    color: white;
+}
+button.like {
+    background-color: rgb(255, 217, 102);
+    font-size: .75rem;
+    font-weight: bold;
+}
+button#add-definition {
+    background-color: rgb(147, 196, 125);
+    /* font-size: .75rem; */
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Main Content Areas */
+.main-content {
+    /* height: 1200px; */
+    /* background-color:blanchedalmond; */
+    padding: 20px 0;
+}
+
+/* Content Area in Column 1 */
+.word-containers {
+    flex: 2.5;
+}
+
+.word-box {
+    border: 2px solid black;
+    padding: 10px;
+}
+.word-details {
+    flex: 1;
+}
+/* .centered {
+    text-align:center;
+} */
+.word {
+    font-size: 32px;
+}
+.word-type {
+    font-style: italic;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+.plural {
+    font-weight: 500;
+    font-size: .80rem;
+}
+.italic {
+    font-style: italic;  
+}
+
+.definition {
+    flex: 2;
+    
+}
+.definition a {
+    color: rgb(38, 103, 160);
+}
+/* Side Panel AKA Column 2 */
+
+.side-panel {
+    flex: 1.5;
+    /* background-color: blue; */
+    /* align-items:flex-start; */
+}
+.message {
+    font-size: 1.25rem;
+}
